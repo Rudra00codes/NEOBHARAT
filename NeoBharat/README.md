@@ -41,6 +41,5 @@ npm install
 - [Team member 2]
 - [Team member 3]
 
-## 📝 License
-[Your chosen license]
+
 
