@@ -8,9 +8,18 @@ Underutilized Common Service Centers (CSCs) and a lack of accessible and afforda
 ## 💡 Our Solution
 We propose an AI-powered diagnostic software suite that transforms existing CSC computers into health diagnostic and information kiosks, providing essential healthcare services to rural populations.
 
-## 📊 Architecture
-![Architecture Diagram](path/to/architecture-diagram.png)  
-*Include a visual representation of your architecture here.*
+## 📦 Architecture
+```mermaid
+graph LR
+    A[User] -->|Interacts|> B(Presentation Layer)
+    B -->|Sends Request|> C(Application Layer)
+    C -->|Uses AI|> D(AI Layer)
+    C -->|Stores/Retrieves Data|> E(Data Access Layer)
+    E -->|Manages Storage|> F(Data Storage Layer)
+    D -->|Provides Diagnosis|> C
+    C -->|Sends Response|> B
+    B -->|Displays Result|> A
+```
 
 ### Key Components:
 - **Presentation Layer**: User interface for interaction.
