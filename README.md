@@ -22,11 +22,68 @@ graph LR
 ```
 
 ### Key Components:
-- **Presentation Layer**: User interface for interaction.
-- **Application Layer**: Core business logic and API services.
-- **AI Layer**: Hosts the AI model for diagnostic assistance.
-- **Data Access Layer**: Manages data storage and retrieval.
-- **Data Storage Layer**: Stores user and health data securely.
+
+<details>
+  <summary>Click to expand!</summary>
+
+  #### 1. Presentation Layer (UI)
+  - **Purpose**: Provides the user interface for interaction with the system.
+  - **Technology**: 
+    - Web-based interface (HTML, CSS, JavaScript) for cross-platform compatibility.
+    - Framework: React, Angular, or Vue.js for building a responsive and interactive UI.
+  - **Key Components**:
+    - Login/Authentication Module
+    - Symptom Input Forms (with multilingual support)
+    - AI Diagnostic Results Display
+    - Teleconsultation Portal
+    - Health Information Library
+    - Data Analytics Dashboard
+
+  #### 2. Application Layer (Business Logic)
+  - **Purpose**: Implements the core business logic of the system, including user authentication, data validation, AI processing, and report generation.
+  - **Technology**: 
+    - Programming Language: Python (with frameworks like Flask or Django)
+    - API Framework: RESTful APIs for communication between the UI and backend services.
+  - **Key Components**:
+    - User Management Service
+    - Symptom Processing Service
+    - AI Diagnostic Service (integrates with the AI model)
+    - Teleconsultation Service (integrates with WebRTC or Jitsi Meet)
+    - Data Analytics Service
+
+  #### 3. AI Layer
+  - **Purpose**: Hosts the AI model for diagnostic assistance.
+  - **Technology**: 
+    - AI Framework: TensorFlow Lite or PyTorch Mobile (for efficient on-device AI processing).
+  - **Key Components**:
+    - Pre-trained AI Model (for common rural ailments)
+    - Model Inference Engine
+    - Data Preprocessing Module
+    - Model Update Mechanism (for continuous learning and improvement)
+
+  #### 4. Data Access Layer
+  - **Purpose**: Provides access to the data storage layer.
+  - **Technology**: 
+    - Database: SQLite (encrypted) for local data storage.
+    - ORM (Object-Relational Mapping): SQLAlchemy or Django ORM for simplified database interactions.
+  - **Key Components**:
+    - Data Access Objects (DAOs) for each data entity (users, patients, symptoms, diagnoses, etc.)
+
+  #### 5. Data Storage Layer
+  - **Purpose**: Stores all data related to the system, including user information, patient records, symptoms, diagnoses, and health information.
+  - **Technology**: 
+    - SQLite (encrypted) for local data storage.
+  - **Key Considerations**:
+    - Data privacy and security (HIPAA Compliance).
+    - Data backup and recovery.
+    - Scalability (consider cloud storage for future expansion).
+
+  #### 6. Infrastructure Layer
+  - **Purpose**: Integrates with Ayushman Bharat Digital Mission (ABDM).
+  - **Technology**: 
+    - API Integrations with the necessary ABDM frameworks.
+
+</details>
 
 ## 🛠️ Technology Stack
 - **Frontend**: React, Tailwind CSS
