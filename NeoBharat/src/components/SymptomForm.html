@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symptom Input Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form id="symptomForm">
+        <label for="symptoms">Describe Your Symptoms:</label>
+        <textarea id="symptoms" name="symptoms" rows="4" required></textarea>
+        
+        <label for="language">Select Language:</label>
+        <select id="language" name="language">
+            <option value="en">English</option>
+            <option value="hi">Hindi</option>
+            <option value="te">Telugu</option>
+            <option value="ta">Tamil</option>
+            <option value="bn">Bengali</option>
+        </select>
+        
+        <button type="submit">Get Diagnosis</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html> 
